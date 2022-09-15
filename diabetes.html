@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./diabetes.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./photos/WhatsApp_Image_2022-04-15_at_11.04.43_AM-removebg-preview.png" alt="">
+        </div>
+    </header>
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+
+        <div class="progress-step progress-step-active f-start" data-title="Public Profile"></div>
+        <div class="progress-step " data-title="Body Profile"></div>
+    </div>
+    <div class="container">
+
+        <form action="form.php">
+
+            <div class="form-step form-step-active">
+                <div class="input-group">
+                    <h1>Enter Your Name</h1>
+                    <input class="name" type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="input-group">
+                    <h1>Age</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="age" value="18">
+                            <h3>0-18</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="age" value="30">
+                            <h3>18-40</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="50">
+                            <h3>40+</h3>
+                        </label>
+                    </div>
+
+
+
+                </div>
+                <div class="input-group">
+                    <h1>Gender</h1>
+                    <div class="options-gender">
+                        <label class="gender">
+                            <input type="radio" name="gender" value="male">
+                            <div class="image">
+                                <img src="./photos/male-user.png" height="60px" width="60px" alt="male.jpg">
+                            </div>
+                        </label>
+                        <label class="gender">
+                            <input type="radio" name="gender" value="female">
+                            <div class="image">
+                                <img src="./photos/woman-avatar.png" height="60px" width="60px" alt="female.jpg">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="next">
+                    <a href="#" class="btn btn-next ml-auto">CONTINUE</a>
+                </div>
+
+            </div>
+            <div class="form-step ">
+                <!-- <div class=" input-group">
+                    <h1>Enter Your Name</h1>
+                    <input class="name" type="text" name="name" id="name" placeholder="Name">
+                </div> -->
+                <div class="input-group for-women">
+                    <h1>Are you currently pregnant</h1>
+                    <div class="options-gender">
+                        <label class="gender" data-title="Yes">
+                            <input type="radio" name="pregnant">
+                            <div class="image">
+                                <img src="./photos/pregnant.png" height="100px" width="100px" alt="pregnant woman">
+                            </div>
+                        </label>
+                        <label class="gender" data-title="No">
+                            <input type="radio" name="pregnant">
+                            <div class="image" data-title="No">
+                                <img src="./photos/not-pregnant.png" height="100px" width="100px"
+                                    alt="non-pregnant woman">
+                            </div>
+                        </label>
+                    </div>
+
+
+
+                </div>
+                <div class="input-group">
+                    <h1>Glucose Level before meal</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="glucose">
+                            <h3>below 100 mg/dl</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="glucose">
+                            <h3>100-125 mg/dl</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="glucose">
+                            <h3>above 126 mg/dl</h3>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>Glucose Level after meal</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="glucose">
+                            <h3>below 140 mg/dl</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="glucose">
+                            <h3>140-199 mg/dl</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="glucose">
+                            <h3>above 200 mg/dl</h3>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>Blood Pressure</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="bloodPressure">
+                            <h3>Normal</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="bloodPressure">
+                            <h3>Low</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="bloodPressure">
+                            <h3>High</h3>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>Is there any change in your skin thickness currently?</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="skinThickness">
+                            <h3>Yes</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="skinThickness">
+                            <h3>No</h3>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>Insulin</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="skinThickness">
+                            <h3>Lorem, ipsum.</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="skinThickness">
+                            <h3>Lorem, ipsum.</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="skinThickness">
+                            <h3>Lorem, ipsum.</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="skinThickness">
+                            <h3>Lorem, ipsum.</h3>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>Body Mass Index (BMI)</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="bmi">
+                            <h3>Lorem, ipsum.</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="bmi">
+                            <h3>Lorem, ipsum.</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="bmi">
+                            <h3>Lorem, ipsum.</h3>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>Diabetes Pedigree Functin</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="DPF">
+                            <h3>Lorem, ipsum.</h3>bmi
+                        </label>
+
+                        <label>
+                            <input type="radio" name="DPF">
+                            <h3>Lorem, ipsum.</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="DPF">
+                            <h3>Lorem, ipsum.</h3>
+                        </label>
+                    </div>
+                </div>
+                <div class="next">
+                    <a href="" class="btn btn-prev mr-auto">PREVIOUS</a>
+                    <input type="submit" value="COMPLETE" class="btn btn-submit ml-auto">
+                </div>
+
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

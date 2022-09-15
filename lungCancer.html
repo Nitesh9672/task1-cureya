@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="diabetes.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./photos/WhatsApp_Image_2022-04-15_at_11.04.43_AM-removebg-preview.png" alt="">
+        </div>
+    </header>
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+
+        <div class="progress-step progress-step-active f-start" data-title="Public Profile"></div>
+        <div class="progress-step " data-title="Body Profile"></div>
+    </div>
+    <div class="container">
+
+        <form action="form.php">
+
+            <div class="form-step form-step-active">
+                <div class="input-group">
+                    <h1>Enter Your Name</h1>
+                    <input class="name" type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="input-group">
+                    <h1>Age</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="age" value="18">
+                            <h3>0-18</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="age" value="30">
+                            <h3>18-40</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="age" value="50">
+                            <h3>40+</h3>
+                        </label>
+                    </div>
+
+
+
+                </div>
+                <div class="input-group">
+                    <h1>Gender</h1>
+                    <div class="options-gender">
+                        <label class="gender">
+                            <input type="radio" name="gender" value="male">
+                            <div class="image">
+                                <img src="./photos/male-user.png" height="60px" width="60px" alt="male.jpg">
+                            </div>
+                        </label>
+                        <label class="gender">
+                            <input type="radio" name="gender" value="female">
+                            <div class="image">
+                                <img src="./photos/woman-avatar.png" height="60px" width="60px" alt="female.jpg">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="next">
+                    <a href="#" class="btn btn-next ml-auto">CONTINUE</a>
+                </div>
+
+            </div>
+            <!-- second page -->
+            <div class="form-step ">
+                <div class=" input-group">
+                    <h1>How long you have been smoking</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="smoking">
+                            <h3>Less than 5 years</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="smoking">
+                            <h3>More than 5 years</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="smoking">
+                            <h3>More than 10 years</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="smoking">
+                            <h3>Never <br> Smoked</h3>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>How often you feel anxiety</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="anxiety">
+                            <h3>Never</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="anxiety">
+                            <h3>Rarely</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="anxiety">
+                            <h3>Sometime</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="anxiety">
+                            <h3>Very Often</h3>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="input-group">
+                    <h1>Do you have a problem of yellow fingers ?</h1>
+                    <div class="options-gender">
+                        <label class="gender" data-title="Yes">
+                            <input type="radio" name="yellow-finger">
+                            <div class="image">
+                                <img src="./photos/Untitled design (20).png" height="100px" width="100px"
+                                    alt="yellow-finger">
+                            </div>
+                        </label>
+                        <label class="gender" data-title="No">
+                            <input type="radio" name="yellow-finger">
+                            <div class="image" data-title="No">
+                                <img src="./photos/Untitled design (1).svg" height="100px" width="100px"
+                                    alt="no-yellow-finger">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>Does peer pressure effect you</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="pressure">
+                            <h3>Never</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pressure">
+                            <h3>Rarely</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="pressure">
+                            <h3>Sometime</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="pressure">
+                            <h3>Very Often</h3>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="input-group">
+                    <h1>Do you have any other chronic diseases</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="chronic">
+                            <h3>Yes</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="chronic">
+                            <h3>No</h3>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="input-group">
+                    <h1>Do you get tired very quickly</h1>
+                    <div class="options-gender th-img">
+                        <label class="gender" data-title="Never">
+                            <input type="radio" name="fatigue">
+                            <div class="image">
+                                <img src="./photos/pngtree-full-full-of-energy-cartoon-cartoon-man-png-image_476926-removebg-preview.png"
+                                    alt="yellow-finger">
+                            </div>
+                        </label>
+                        <label class="gender" data-title="Sometime">
+                            <input type="radio" name="fatigue">
+                            <div class="image" data-title="No">
+                                <img src="./photos/imgbin-body-feeling-tired-therapy-perspiration-nerve-others-ynT4npy48x60QxYBAkm2T3E96-removebg-preview.png"
+                                    alt="no-yellow-finger">
+                            </div>
+                        </label>
+                        <label class="gender" data-title="Regularly">
+                            <input type="radio" name="fatigue">
+                            <div class="image" data-title="No">
+                                <img src="./photos/istockphoto-1097660438-612x612-removebg-preview.png"
+                                    alt="no-yellow-finger">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>Do you have any kind of allergy</h1>
+                    <div class="options-gender">
+                        <label class="gender" data-title="Yes">
+                            <input type="radio" name="allergy">
+                            <div class="image">
+                                <img src="./photos/antihistamines.png" height="100px" width="100px">
+                            </div>
+                        </label>
+                        <label class="gender" data-title="No">
+                            <input type="radio" name="allergy">
+                            <div class="image">
+                                <img src="./photos/woman.png" height="100px" width="100px">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>Whistling in the chest</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="chestWhistling">
+                            <h3>Yes</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="chestWhistling">
+                            <h3>No</h3>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>How often do you consume alcohol</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="pressure">
+                            <h3>Never</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pressure">
+                            <h3>
+                                < 5 times a week </h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="pressure">
+                            <h3>>5 times a week</h3>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="input-group">
+                    <h1>How frequently did you cough?</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="coughing">
+                            <h3>Not at all</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="coughing">
+                            <h3>
+                                Occasionally </h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="coughing">
+                            <h3>>Very much</h3>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="input-group">
+                    <h1>Shortness of breath</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="shortnessOfBreath">
+                            <h3>Never</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="shortnessOfBreath">
+                            <h3>Rarely</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="shortnessOfBreath">
+                            <h3>Sometime</h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="shortnessOfBreath">
+                            <h3>Very Often</h3>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="input-group">
+                    <h1>Difficulty in swallowing food</h1>
+                    <div class="options-gender">
+                        <label class="gender" data-title="Yes">
+                            <input type="radio" name="swallow">
+                            <div class="image">
+                                <img src="./photos/swallowing-problem.svg" height="100px" width="100px">
+                            </div>
+                        </label>
+                        <label class="gender" data-title="No">
+                            <input type="radio" name="swallow">
+                            <div class="image">
+                                <img src="./photos/noswallowing.svg" height="100px" width="100px">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <h1>How often do you have chest pain</h1>
+                    <div class="options">
+
+                        <label>
+                            <input type="radio" name="chestPain">
+                            <h3>Never</h3>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="chestPain">
+                            <h3>
+                                Sometime </h3>
+                        </label>
+                        <label>
+                            <input type="radio" name="chestPain">
+                            <h3>Regularly</h3>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="next">
+                    <a href="" class="btn btn-prev mr-auto">PREVIOUS</a>
+                    <input type="submit" value="COMPLETE" class="btn btn-submit ml-auto">
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+   
+  
+   
+   
+  
+    <div class="questions">
+        <p>How often do you have chest pain?</p>
+        <div class="input">
+            <input type="radio" name="" value="never">
+            <label for="never">Never</label><br>
+            <input type="radio" name="" value="sometime">
+            <label for="sometime">Sometime</label><br>
+            <input type="radio" name="" value="regular">
+            <label for="regular">Regularly</label><br><br>
+        </div>
+
+    </div>
+    <div class="question-submit">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+    </div>
+    </div>
+
+
+    </section> -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
